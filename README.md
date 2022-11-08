@@ -26,12 +26,12 @@ Nếu trên máy chưa cài đặt thì làm theo hướng dẫn sau [Java SDK](
 ### Source Code
 - Tải Về Source Code Từ Git Này Để Bắt Đầu Chạy Server.
 
-## 💡 Cách Khởi Chạy <a name = "run"></a>
+## Cách Khởi Chạy <a name = "run"></a>
 - Bước 1: Mở IDE Intellij và open souce code vừa tải về từ git.
 - Bước 2: Chờ thanh góc phải màn hình load xong package.
 - Bước 3: Bấm vào button có dạng start ở góc trên bên phải màn hình để bắt đầu.
 - Bước 4: Test API với các engine hỗ trợ như chrome hoặc postman với đường dẫn là: http://localhost:8080/user
-Chú ý: Nếu mọi người đang cùng xài chung mạng wifi thì dùng cmd tìm ip của máy:
+- 💡 Chú ý: Nếu mọi người đang cùng xài chung mạng wifi thì dùng cmd tìm ip của máy:
 ```
 ipconfig
 ```
