@@ -48,6 +48,8 @@ Sau đó thay localhost thành ip của máy thì các máy khác sẽ có thể
 - Sử dụng visual studio code [Visual Studio code](https://code.visualstudio.com/)
 
 ### 💡 Test chương trình bằng web chrome
+![plot](./images/08.11.2022_14.13.59_REC.png)
+
 Bật phân quyền beta và cho web run web
 ```
  $ flutter channel beta
