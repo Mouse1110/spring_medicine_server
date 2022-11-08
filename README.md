@@ -77,76 +77,42 @@ Nơi tạo ra các API để client request, trong thư mục controller sẽ ch
 ![img](./images/08.11.2022_14.32.02_REC.png)
 
 
-
-
-
-
-
-
-
-
-### Ứng Dụng Có Sử Dụng Các Thư Viện Hỗ Trợ
-Được cài đặt theo gói pub get trong tệp pubspec.yaml
-1. material-design: (có sẵn khi cài đặt gói).
-2. assets image: (import hình ảnh để sử dụng cho dự án).
-3. dev_dependencies: (hỗ trợ việc code web app).
-4. fl_chart: ^0.12.0 (hỗ trợ vẽ line chart).
-5. cupertino_icons: ^1.0.1 (để sử dụng icon của có sẵn của flutter).
-
-## IDE sử dụng <a name = "ide"></a>
-- Sử dụng visual studio code [Visual Studio code](https://code.visualstudio.com/)
-
-### 💡 Test chương trình bằng web chrome
-![plot](./images/08.11.2022_14.13.59_REC.png)
-
-Bật phân quyền beta và cho web run web
+## Chạy Thử Nghiệm <a name = "demo"></a>
+Các API có thể demo:
+1. Về User: /users
+- Lấy danh sách user đã đăng ký: /
+Phương thức: GET
+Header: ...
+Request Body: không có
 ```
- $ flutter channel beta
- $ flutter upgrade
- $ flutter config --enable-web
+http://localhost:8080/users
 ```
-
-Chạy test ứng dụng trên chrome
+- Đăng nhập: /
+Phương thức: POST
+Header: application/json
+Request Body: 
+{
+"phone":"0382292563",
+"password":"admin"
+}
 ```
-$ cd MyApp
-$ flutter run -d chrome
+http://localhost:8080/users/login
 ```
-## Cấu trúc lib <a name="lib"></a>
-### 💡 Lib
-1. [DesktopScreen](#)
-2. [Model](#)
-3. [home](#)
-4. [detail](#)
-
-```main.dart```
-
-### 💡 Screen View trên các device
-Hiển thị trên 2 loại màn hình smartphone (width<800) và desktop (width>=800)
+- Đăng ký: /
+Phương thức: POST
+Header: application/json
+Request Body: 
+{
+"name":"Nguyen Van A",
+"phone":"0382292554",
+"password":"admin"
+}
 ```
-LayoutBuilder(
-      builder: (context, constraints) {
-        if (constraints.maxWidth < 800) {
-          return HomeScreen();
-        } else {
-          return DesktopScreen(size: size);
-        }
-      },
-    );
- ```
- 
-## Các PageView <a name="pageview"></a>
-1. [Trang chủ](#home)
-2. [Detail Tree](#detail)
+http://localhost:8080/users/signup
+```
+----------------------------------------------------------------------------------------------
+CONTACT: NGUYỄN LONG BÁ
+Phone: 0382292563
+facebook: https://www.facebook.com/profile.php?id=100011342660106
+email: luutru.banguyen@gmail.com
 
-### 💡 Trang Chủ <a name="home"></a>
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
