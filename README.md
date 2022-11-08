@@ -31,11 +31,11 @@ Nếu trên máy chưa cài đặt thì làm theo hướng dẫn sau [Java SDK](
 - Bước 2: Chờ thanh góc phải màn hình load xong package.
 - Bước 3: Bấm vào button có dạng start ở góc trên bên phải màn hình để bắt đầu.
 - Bước 4: Test API với các engine hỗ trợ như chrome hoặc postman với đường dẫn là: http://localhost:8080/user
--- Chú ý: Nếu mọi người đang cùng xài chung mạng wifi thì dùng cmd tìm ip của máy:
+Chú ý: Nếu mọi người đang cùng xài chung mạng wifi thì dùng cmd tìm ip của máy:
 ```
 ipconfig
 ```
--- Sau đó thay localhost thành ip của máy thì các máy khác sẽ có thể truy cập được ví dụ: http://192.168.1.27:8080/user
+Sau đó thay localhost thành ip của máy thì các máy khác sẽ có thể truy cập được ví dụ: http://192.168.1.27:8080/user
 ### Ứng Dụng Có Sử Dụng Các Thư Viện Hỗ Trợ
 Được cài đặt theo gói pub get trong tệp pubspec.yaml
 1. material-design: (có sẵn khi cài đặt gói).
